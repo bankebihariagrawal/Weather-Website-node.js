@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    {{!-- i know that above path is not right but it working because in app.js we join the public folder to src folder therefore we use it like this if we remove then
+css , img , js file not worked with this file --}}
+<title>Help</title>
+
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h2>{{helptext}}</h2>    
+    </div>
+
+    {{>footer}}
+</body>
+</html>

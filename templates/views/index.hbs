@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather</title>
+{{!-- i know that above path is not right but it working because in app.js we join the public folder to src folder therefore we use it like this if we remove then
+css , img , js file not worked with this file --}}
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+   
+        <p>Use this Search box to get your weather!</p>
+   <br>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <h2 class="loading"></h2>
+        <div id="info">
+        <h2>Location:</h2>
+        <p id="msg1"></p>
+        <h2>Temperature:</h2>
+        <p id="msg2"></p>
+        <h2>Rain Possibilty:</h2>
+        <p id="msg3"></p>
+        <h2>Humidity:</h2>
+        <p id="msg4"></p>
+        <h2>Weather Description:</h2>
+        <img id="icon">
+        <p id="msg5"></p>
+        <h2>More Information:</h2>
+        <a id="msg6" target="_blank"></a>
+        </div>
+    </div>
+    
+    {{>footer}}
+      
+<script src="./js/app.js"></script>  
+</body>
+</html>

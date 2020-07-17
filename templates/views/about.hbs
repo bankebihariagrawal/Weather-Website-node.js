@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/weather.png">
+    <title>About</title>
+    {{!-- i know that above path is not right but it working because in app.js we join the public folder to src folder therefore we use it like this if we remove then
+css , img , js file not worked with this file --}}
+
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h2>API Used</h2>
+        <h3>For Weather Information : </h3>
+        <a href="https://weatherstack.com/" target="_blank">http://api.weatherstack.com/forecast</a>
+        <h3>For Location Information : </h3>
+        <a href="https://www.mapbox.com/pricing/" target="_blank">https://api.mapbox.com/geocoding/v5/mapbox.places/</a>
+    </div>
+
+    {{>footer}}
+</body>
+</html>
