@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit',(e) => {
     const location = search.value    
     document.querySelector('#info').style.visibility  = "hidden"
     document.querySelector('.loading').innerHTML = "Information is on the way..."  
-   fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+   fetch('/weather?address=' + location).then((response) => {
     response.json().then((data) => {
         if(data.error) {
             document.querySelector('.loading').innerHTML = data.error
